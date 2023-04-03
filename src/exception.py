@@ -14,6 +14,6 @@ class CustomException(Exception):
         super().__init__(error_message)
         self.error_message=error_message_datils(error_message,error_details=error_details)
 
-    def __init__(self):
+    def __str__(self):
         return self.error_message
 
